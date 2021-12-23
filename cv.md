@@ -31,3 +31,9 @@ I like learning programming.
   * Visual Studio Cod
   * WebStorm
 
+## Code examples 
+```
+function multiply(a, b){
+ return a * b
+}
+```
