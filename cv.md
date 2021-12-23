@@ -1,5 +1,7 @@
 # Anton Fedorov
 
+![foto Anton Fedorov](avatar.jpg/150x100)
+
 ## Contacts
 
 * __Phone__: +7911888088*
@@ -40,4 +42,4 @@ function multiply(a, b){
 ## Project
  
 [my first project](https://patosha.github.io/portfolio/) 
-[github project](https://github.com/Patosha/portfolio) 
+
