@@ -1,7 +1,5 @@
 # Anton Fedorov
 
-![foto Anton Fedorov](avatar.jpg/150x100)
-
 ## Contacts
 
 * __Phone__: +7911888088*
