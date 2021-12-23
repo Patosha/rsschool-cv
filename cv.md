@@ -10,3 +10,5 @@
 
 ## About Me
 
+* In recent years, he worked in a different profession. Purposeful and responsible. 
+I like learning programming.
