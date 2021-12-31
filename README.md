@@ -1,1 +1,1 @@
-https://Patosha.github.io/rsschool-cv/
+https://Patosha.github.io/rsschool-cv/cv
