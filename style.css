@@ -248,7 +248,25 @@ body {
   width: 100%;
 }
 
+.skills__item {
+  position: relative;
+  padding-left: 30px;
+}
 
+.skills__item::before {
+  content: "";
+  top: 12px;
+  left: 0;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: var(--color-blue);
+}
+
+.code {
+  padding: 60px 0;
+}
 
 .code__wrap {
   flex-direction: row-reverse;
