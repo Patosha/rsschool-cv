@@ -99,9 +99,10 @@ button {
 }
 
 :root {
-  --color-blue: #153293;
-  --color-black: #000;
+  --color-blue: #000080;
+  --color-title: #a52a2a;
   --color-white: #fff;
+  --color-bg: #dcd0ff;
 }
 
 
@@ -110,7 +111,9 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  color: var(--color-white);
+  color: var(--color-blue);
+  line-height: 2;
+  background-color: var(--color-bg);
 }
 
 .container {
@@ -132,4 +135,91 @@ body {
 
 .nav__ltem:not(:last-child) {
   margin-right: 30px;
+}
+
+.nav__link {
+  color: var(--color-white);
+  padding: 3px;
+}
+
+.about {
+  padding: 60px 0;
+}
+
+.about__profile {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.about__img {
+  object-fit: cover;
+}
+
+.about__wrap {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+.title {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  color: var(--color-title);
+  font-size: 42px;
+}
+
+.title-center {
+  margin: auto 0;
+}
+
+.about__subtitle {
+  color: var(--color-blue);
+}
+
+.contacts__wrap {
+  display: flex;
+  justify-content: space-between;
+  border-top: 3px solid;
+  color: #008000;
+  padding-top: 30px;
+}
+
+.contacts__item {
+  padding-left: 60px;
+  color: var(--color-white);
+}
+
+.contacts__item--location {
+  background-image: url(assets/svg/location.svg);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.contacts__item--github {
+  background-image: url(assets/svg/github.svg);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.contacts__item--email {
+  background-image: url(assets/svg/email.svg);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.contacts__item--telegram {
+  background-image: url(assets/svg/telegram.svg);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.contacts__item--discord {
+  background-image: url(assets/svg/discord.svg);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.contacts__link {
+  padding: 3px;
 }
