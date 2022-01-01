@@ -188,7 +188,7 @@ body {
   color: var(--color-blue);
 }
 
-.contacts__wrap {
+.block-style {
   display: flex;
   justify-content: space-between;
   border-top: 3px solid;
@@ -233,6 +233,19 @@ body {
 
 .contacts__link {
   padding: 3px;
+}
+
+.summary {
+  padding: 60px 0;
+}
+
+.summary__wrap {
+  flex-direction: row-reverse;
+}
+
+.summary__text {
+  max-width: 500px;
+  width: 100%;
 }
 
 .footer {
