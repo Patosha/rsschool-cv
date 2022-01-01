@@ -272,6 +272,22 @@ body {
   flex-direction: row-reverse;
 }
 
+.projects__link {
+  position: relative;
+  padding-left: 30px;
+}
+
+.projects__link::before {
+  content: "";
+  top: 6px;
+  left: 0;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--color-blue);
+}
+
 .footer {
   background-color: #00bfff;
   color: var(--color-white);
