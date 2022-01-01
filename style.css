@@ -197,7 +197,7 @@ body {
 
 .contacts__item {
   padding-left: 60px;
-  color: var(--color-white);
+  color: var(--color-title);
 }
 
 .contacts__item--location {
@@ -232,6 +232,7 @@ body {
 
 .contacts__link {
   padding: 3px;
+  color: var(--color-blue);
 }
 
 .summary {
@@ -298,6 +299,14 @@ body {
 .education__text {
   max-width: 300px;
   width: 100%;
+}
+
+.english {
+  padding-bottom: 60px;
+}
+
+.english__text {
+  align-self: center;
 }
 
 .footer {
