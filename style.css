@@ -248,6 +248,12 @@ body {
   width: 100%;
 }
 
+
+
+.code__wrap {
+  flex-direction: row-reverse;
+}
+
 .footer {
   background-color: #00bfff;
   color: var(--color-white);
