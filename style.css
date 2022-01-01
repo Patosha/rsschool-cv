@@ -118,7 +118,6 @@ body {
   font-size: 20px;
   color: var(--color-blue);
   line-height: 2;
-  background-color: var(--color-bg);
   display: flex;
   flex-direction: column;
 }
@@ -286,6 +285,19 @@ body {
   height: 10px;
   border-radius: 100%;
   background-color: var(--color-blue);
+}
+
+.education__wrap {
+  flex-direction: row-reverse;
+}
+
+.education {
+  padding: 60px 0;
+}
+
+.education__text {
+  max-width: 300px;
+  width: 100%;
 }
 
 .footer {
