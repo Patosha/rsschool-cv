@@ -102,7 +102,6 @@ button {
   --color-blue: #000080;
   --color-title: #a52a2a;
   --color-white: #fff;
-  --color-bg: #dcd0ff;
 }
 
 html,
@@ -110,13 +109,12 @@ body {
   height: 100%;
 }
 
-
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  color: var(--color-blue);
+  color: var(--color-title);
   line-height: 2;
   display: flex;
   flex-direction: column;
@@ -146,6 +144,31 @@ body {
 .nav__link {
   color: var(--color-white);
   padding: 3px;
+  position: relative;
+}
+
+.animation::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-white);
+  display: block;
+  transition: width 0.5s ease-out;
+}
+
+.animation:hover::after {
+  width: 100%;
+}
+
+.animation-link {
+  transition: color 0.9s;
+}
+
+.animation-link:hover {
+  color: var(--color-title);
 }
 
 .main {
@@ -183,51 +206,39 @@ body {
   margin: auto 0;
 }
 
-.about__subtitle {
-  color: var(--color-blue);
-}
-
 .block-style {
   display: flex;
   justify-content: space-between;
   border-top: 3px solid;
-  color: #008000;
+  color: var(--color-blue);
   padding-top: 30px;
 }
 
 .contacts__item {
   padding-left: 60px;
   color: var(--color-title);
+  background-position: center left;
+  background-repeat: no-repeat;
 }
 
 .contacts__item--location {
   background-image: url(assets/svg/location.svg);
-  background-position: center left;
-  background-repeat: no-repeat;
 }
 
 .contacts__item--github {
   background-image: url(assets/svg/github.svg);
-  background-position: center left;
-  background-repeat: no-repeat;
 }
 
 .contacts__item--email {
   background-image: url(assets/svg/email.svg);
-  background-position: center left;
-  background-repeat: no-repeat;
 }
 
 .contacts__item--telegram {
   background-image: url(assets/svg/telegram.svg);
-  background-position: center left;
-  background-repeat: no-repeat;
 }
 
 .contacts__item--discord {
   background-image: url(assets/svg/discord.svg);
-  background-position: center left;
-  background-repeat: no-repeat;
 }
 
 .contacts__link {
@@ -246,11 +257,13 @@ body {
 .summary__text {
   max-width: 500px;
   width: 100%;
+  color: var(--color-title);
 }
 
 .skills__item {
   position: relative;
   padding-left: 30px;
+  color: var(--color-title);
 }
 
 .skills__item::before {
@@ -270,6 +283,10 @@ body {
 
 .code__wrap {
   flex-direction: row-reverse;
+}
+
+.code__text {
+  color: var(--color-title);
 }
 
 .projects__link {
@@ -299,6 +316,7 @@ body {
 .education__text {
   max-width: 300px;
   width: 100%;
+  color: var(--color-title);
 }
 
 .english {
@@ -307,6 +325,7 @@ body {
 
 .english__text {
   align-self: center;
+  color: var(--color-title);
 }
 
 .footer {
@@ -323,6 +342,12 @@ body {
 
 .footer__copy {
   margin-right: auto;
+}
+
+.footer-github {
+  background-image: url(assets/svg/github.svg);
+  background-position: center left;
+  background-repeat: no-repeat;
 }
 
 .footer__link {
