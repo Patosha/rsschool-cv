@@ -58,12 +58,285 @@ button {
   color: inherit;
 }
 
-address {
+@font-face {
+  src:
+    url("../assets/fonts/Inter/Inter-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Inter/Inter-Regular.woff") format("woff");
+  font-family: "Inter";
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    url("../assets/fonts/Inter/Inter-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Inter/Inter-Bold.woff") format("woff");
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    url("../assets/fonts/Merriweather/Merriweather-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Merriweather/Merriweather-Regular.woff") format("woff");
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    url("../assets/fonts/Merriweather/Merriweather-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Merriweather/Merriweather-Bold.woff") format("woff");
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-blue: #000080;
+  --color-title: #a52a2a;
+  --color-white: #fff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: var(--color-title);
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.header {
+  padding: 30px 0;
+  background-color: var(--color-blue);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav__ltem:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav__link {
+  color: var(--color-white);
+  padding: 3px;
+  position: relative;
+}
+
+.animation::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-white);
+  display: block;
+  transition: width 0.5s ease-out;
+}
+
+.animation:hover::after {
+  width: 100%;
+}
+
+.animation-link {
+  transition: color 0.9s;
+}
+
+.animation-link:hover {
+  color: var(--color-title);
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.about,
+.summary,
+.code,
+.education {
+  padding: 60px 0;
+}
+
+.about__profile {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.about__img {
+  object-fit: cover;
+}
+
+.about__wrap {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+.title {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  color: var(--color-title);
+  font-size: 42px;
+}
+
+.title-center {
+  margin: auto 0;
+}
+
+.block-style {
+  display: flex;
+  justify-content: space-between;
+  border-top: 3px solid;
+  color: var(--color-blue);
+  padding-top: 30px;
+}
+
+.contacts__item {
+  padding-left: 60px;
+  color: var(--color-title);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.contacts__item--location {
+  background-image: url(assets/svg/location.svg);
+}
+
+.contacts__item--github {
+  background-image: url(assets/svg/github.svg);
+}
+
+.contacts__item--email {
+  background-image: url(assets/svg/email.svg);
+}
+
+.contacts__item--telegram {
+  background-image: url(assets/svg/telegram.svg);
+}
+
+.contacts__item--discord {
+  background-image: url(assets/svg/discord.svg);
+}
+
+.contacts__link {
+  padding: 3px;
+  color: var(--color-blue);
+}
+
+.summary__wrap,
+.code__wrap,
+.education__wrap {
+  flex-direction: row-reverse;
+}
+
+.summary__text {
+  max-width: 500px;
+  width: 100%;
+  color: var(--color-title);
+}
+
+.skills__item {
+  position: relative;
+  padding-left: 30px;
+  color: var(--color-title);
+}
+
+.skills__item::before {
+  content: "";
+  top: 12px;
+  left: 0;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: var(--color-blue);
+}
+
+.code__text {
+  color: var(--color-title);
+  background-color: #f5f5dc;
+}
+
+.projects__link {
+  position: relative;
+  padding-left: 30px;
+}
+
+.projects__link::before {
+  content: "";
+  top: 6px;
+  left: 0;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--color-blue);
+}
+
+.education__text {
+  max-width: 300px;
+  width: 100%;
+  color: var(--color-title);
+}
+
+.english {
+  padding-bottom: 60px;
+}
+
+.english__text {
+  align-self: center;
+  color: var(--color-title);
+}
+
+.footer {
+  background-color: #00bfff;
+  color: var(--color-white);
+  padding: 30px 0;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copy {
+  margin-right: auto;
+}
+
+.footer-github {
+  background-image: url(assets/svg/github.svg);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.footer__link {
+  margin-right: auto;
+  padding-left: 50px;
 }
