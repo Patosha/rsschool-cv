@@ -175,7 +175,10 @@ body {
   flex-grow: 1;
 }
 
-.about {
+.about,
+.summary,
+.code,
+.education {
   padding: 60px 0;
 }
 
@@ -246,11 +249,9 @@ body {
   color: var(--color-blue);
 }
 
-.summary {
-  padding: 60px 0;
-}
-
-.summary__wrap {
+.summary__wrap,
+.code__wrap,
+.education__wrap {
   flex-direction: row-reverse;
 }
 
@@ -277,16 +278,9 @@ body {
   background-color: var(--color-blue);
 }
 
-.code {
-  padding: 60px 0;
-}
-
-.code__wrap {
-  flex-direction: row-reverse;
-}
-
 .code__text {
   color: var(--color-title);
+  background-color: #f5f5dc;
 }
 
 .projects__link {
@@ -303,14 +297,6 @@ body {
   height: 10px;
   border-radius: 100%;
   background-color: var(--color-blue);
-}
-
-.education__wrap {
-  flex-direction: row-reverse;
-}
-
-.education {
-  padding: 60px 0;
 }
 
 .education__text {
